@@ -150,11 +150,13 @@ body {
   margin-left: 150px;
   display: inline-flex;
   margin-top: 20px;
+  
 }
 .cartimg {
-  width: 50px;
-  height: 40px;
+  width: 40px;
+  height: 30px;
   margin-top: 10px;
+ 
 }
 .cartText {
   margin-left: 10px;
@@ -1041,6 +1043,8 @@ marquee img{
   font-family: raleway, sans-serif;
   font-size: 20px;
 }
+
+
 .middle {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -1053,6 +1057,7 @@ marquee img{
   text-align: justify;
   font-size: 15px;
 }
+
 #paralink {
   border: 1px solid #000000;
   padding: 10px;
@@ -1117,3 +1122,6 @@ marquee img{
 .victor div:nth-child(2) img:hover{
   cursor:pointer;
 }
+
+
+
