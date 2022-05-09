@@ -54,23 +54,23 @@
 <script>
     document.querySelector("form").addEventListener("submit", formSubmit);
 
-    var userData = JSON.parse(localStorage.getItem("userDataBase"));
+    var userData = JSON.parse(localStorage.getItem("DataOfUsers"));
 
     function formSubmit(event) {
         event.preventDefault();
         var email = document.querySelector("#mail").value;
         var Password = document.querySelector("#passwd").value;
 
-        for (var i = 0; i < userData.length; i++) {
-            console.log(userData[i].mail, userData[i].passwd);
-            if (userData[i].mail == email && userData[i].passwd == Password) {
-                alert("login successful")
-                window.location.href = "footballProducts.html"
+        if (userData.mail == email && userData.passwd == Password) {
+            alert("login successful")
+            window.location.href = "footballProducts.html"
 
-            } else {
-                alert("Wrong ID or Password");
+        } else if (userData.mail == email && userData.passwd !== Password || userData.mail !== email && userData.passwd == Password) {
+            alert("Wrong ID or Password");
+            window.location.href = "signin.html";
+        } else {
+            alert("create an account First");
 
-            }
         }
     }
 </script>
