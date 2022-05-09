@@ -1,5 +1,5 @@
 
-  var CartData = JSON.parse(localStorage.getItem("CartData")) || [];
+  var CartData = JSON.parse(localStorage.getItem("ecomArr")) || [];
 
   CartData.forEach(function(el){
        var tr = document.createElement("tr");
@@ -190,10 +190,12 @@ cartApply.addEventListener("click",function(){
 })
 
 var cartTotalAmount = document.querySelector("#totalCartAmount").innerText
-// console.log(cartTotalAmount);
+console.log(cartTotalAmount);
 
 CartData.forEach(function(el){
   el["cartTotalamountAdd"] = cartTotalAmount;
   localStorage.setItem("CartData",JSON.stringify(CartData));
 
 })
+
+localStorage.setItem("sachinData",cartTotalAmount);
