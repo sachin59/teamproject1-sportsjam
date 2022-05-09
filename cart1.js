@@ -1,5 +1,21 @@
 
-  var CartData = JSON.parse(localStorage.getItem("CartData")) || [];
+  // var CartData = JSON.parse(localStorage.getItem("CartData")) || [];
+  var CartData = [
+    {
+      desc: "KOOKABURRA GHOST 100 ENGLISH WILLOW CRICKET BAT",
+      id: 2,
+      price: 6099,
+      img : "https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/KBGHST100.jpg"
+
+    },
+    {
+      desc: "KOOKABURRA GHOST 100 ENGLISH WILLOW CRICKET BAT",
+      id: 2,
+      price: 12999,
+      img : "https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/SGSNYGLDICON.jpg"
+
+    }
+  ]
 
   CartData.forEach(function(el){
        var tr = document.createElement("tr");
